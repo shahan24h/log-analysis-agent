@@ -1,0 +1,40 @@
+{
+  "patterns": {
+    "file_operations": {
+      "file_not_found": {
+        "regex": ".*file.*not found.*",
+        "severity": "high"
+      },
+      "permission_denied": {
+        "regex": ".*permission denied.*|.*access denied.*",
+        "severity": "high"
+      }
+    },
+    "conversion_errors": {
+      "conversion_failed": {
+        "regex": ".*conversion.*failed.*",
+        "severity": "high"
+      },
+      "unsupported_format": {
+        "regex": ".*unsupported.*format.*",
+        "severity": "medium"
+      }
+    },
+    "extraction_errors": {
+      "extraction_failed": {
+        "regex": ".*extract.*failed.*",
+        "severity": "high"
+      }
+    },
+    "system_errors": {
+      "out_of_memory": {
+        "regex": ".*out of memory.*",
+        "severity": "critical"
+      },
+      "timeout": {
+        "regex": ".*timeout.*",
+        "severity": "high"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Log Analysis Agent Configuration
+
+# Input Settings
+input:
+  log_directory: "data/sample_logs"
+  supported_formats: [".log", ".txt"]
+  encoding: "utf-8"
+
+# Parsing Settings
+parsing:
+  timestamp_formats:
+    - "%Y-%m-%d %H:%M:%S"
+    - "%Y/%m/%d %H:%M:%S"
+    - "%d-%b-%Y %H:%M:%S"
+  error_keywords:
+    - "ERROR"
+    - "FAIL"
+    - "EXCEPTION"
+    - "CRITICAL"
+    - "FATAL"
+  warning_keywords:
+    - "WARNING"
+    - "WARN"
+
+# Anomaly Detection
+anomaly_detection:
+  contamination: 0.1
+  n_estimators: 100
+
+# Database
+database:
+  path: "data/database/logs.db"
+
+# Reporting
+reporting:
+  output_directory: "data/reports"

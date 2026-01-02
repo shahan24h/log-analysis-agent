@@ -1,0 +1,24 @@
+2024-12-07 10:15:23 [INFO] Application started successfully
+2024-12-07 10:15:24 [INFO] Loading configuration from config.xml
+2024-12-07 10:15:25 [INFO] Document conversion service initialized
+2024-12-07 10:16:01 [INFO] Processing document: invoice_2024_001.pdf
+2024-12-07 10:16:05 [INFO] Document converted successfully: invoice_2024_001.docx
+2024-12-07 10:17:12 [INFO] Processing document: report_Q4.xlsx
+2024-12-07 10:17:15 [ERROR] Conversion failed: Unsupported format for report_Q4.xlsx
+2024-12-07 10:17:15 [ERROR] Error code: CONV_ERR_001 - Invalid file format
+2024-12-07 10:18:45 [INFO] Processing archive: data_backup.zip
+2024-12-07 10:18:46 [INFO] Extracting files from archive...
+2024-12-07 10:18:50 [WARNING] Archive extraction slow - file count: 1250
+2024-12-07 10:19:30 [INFO] Archive extracted successfully: 1250 files
+2024-12-07 10:20:15 [ERROR] File not found: C:\temp\missing_doc.pdf
+2024-12-07 10:20:15 [ERROR] Error code: FILE_ERR_404
+2024-12-07 10:21:00 [INFO] Processing document: contract_final.docx
+2024-12-07 10:21:03 [INFO] Document converted successfully: contract_final.pdf
+2024-12-07 10:22:30 [CRITICAL] Out of memory exception during conversion
+2024-12-07 10:22:30 [CRITICAL] Error code: MEM_ERR_001 - Memory limit exceeded
+2024-12-07 10:22:31 [INFO] Attempting recovery...
+2024-12-07 10:22:35 [INFO] Service restarted successfully
+2024-12-07 10:23:00 [INFO] Processing document: large_presentation.pptx
+2024-12-07 10:23:45 [WARNING] Conversion taking longer than expected
+2024-12-07 10:24:30 [INFO] Document converted successfully: large_presentation.pdf
+2024-12-07 10:25:10 [INFO] Batch processing completed: 5 successful, 2 failed

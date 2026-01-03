@@ -4,7 +4,6 @@ An intelligent, fully local log analysis system for Windows application logs wit
 
 ## Features
 
-- **Offline Operation**: 100% local processing, no internet required
 - **Multi-Interface**: Both CLI and GUI interfaces
 - **Anomaly Detection**: ML-based anomaly detection using Isolation Forest
 - **Pattern Recognition**: Time-series analysis and rule-based pattern matching
